@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--<link href="/assets/fontawesome-free-6.7.2/css/all.css" rel="stylesheet" /> -->
+    <title>Nädal 5</title>
+</head>
+<body>
+    <header id="header">
+        <div class="topnav">
+            <a href="#home" class="active">
+                <i class="fa-solid fa-hippo"></i>
+            </a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+              <a href="#meist">Meist</a>
+              <a href="#missioon">Missioon</a>
+              <a href="#toeta">Toeta</a>
+              <a href="#kontaktid">Kontaktid</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+          
+        <nav class="regnav">
+            <i class="fa-solid fa-hippo"></i>
+            <a href="">Meist</a>
+            <a href="">Missioon</a>
+            <a href="">Toeta</a>
+            <a href="">Kontaktid</a>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <section id="meist">
+            <h1>Meist</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis congue elementum. Vivamus vel nisl augue. Sed porta consequat nunc vel rhoncus. Curabitur sit amet ligula at nisl efficitur accumsan. Suspendisse eros velit, mattis quis ultrices sed, condimentum ac nisi. Vivamus vel nulla risus. Sed tincidunt sagittis eros ac tristique. Aliquam nulla enim, vestibulum non nulla quis, eleifend tristique nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam arcu nulla, pellentesque eu ligula nec, congue elementum eros. Morbi tempor leo ut faucibus rhoncus. Duis orci tortor, maximus nec erat ac, tristique cursus ligula. Etiam rutrum orci augue. Mauris imperdiet quam eu augue tempus scelerisque. </p>
+        </section>
+        <section id="missioon">
+            <h1>Missioon</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis congue elementum. Vivamus vel nisl augue. Sed porta consequat nunc vel rhoncus. Curabitur sit amet ligula at nisl efficitur accumsan. Suspendisse eros velit, mattis quis ultrices sed, condimentum ac nisi. Vivamus vel nulla risus. Sed tincidunt sagittis eros ac tristique. Aliquam nulla enim, vestibulum non nulla quis, eleifend tristique nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam arcu nulla, pellentesque eu ligula nec, congue elementum eros. Morbi tempor leo ut faucibus rhoncus. Duis orci tortor, maximus nec erat ac, tristique cursus ligula. Etiam rutrum orci augue. Mauris imperdiet quam eu augue tempus scelerisque. </p>
+        </section>
+        <section id="toeta">
+            <h1>Toeta</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis congue elementum. Vivamus vel nisl augue. Sed porta consequat nunc vel rhoncus. Curabitur sit amet ligula at nisl efficitur accumsan. Suspendisse eros velit, mattis quis ultrices sed, condimentum ac nisi. Vivamus vel nulla risus. Sed tincidunt sagittis eros ac tristique. Aliquam nulla enim, vestibulum non nulla quis, eleifend tristique nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam arcu nulla, pellentesque eu ligula nec, congue elementum eros. Morbi tempor leo ut faucibus rhoncus. Duis orci tortor, maximus nec erat ac, tristique cursus ligula. Etiam rutrum orci augue. Mauris imperdiet quam eu augue tempus scelerisque. </p>
+        </section>
+        <section id="kontaktid">
+            <h1>Kontaktid</h1>
+            <h3>E-mail</h3>
+            <p>tlu@tlu.ee</p>
+            <h3>Telefoninumber</h3>
+            <p>#######</p>
+            <h3>Aadress</h3>
+            <p>narva mnt 25</p>
+            <a class="nupp" href="#header">Ülesse</a>
+        </section>
+        <section id="kontakteeru">
+            <form>
+                <h1>Kontakteeru</h1>
+                <p>Nimi</p>
+                <input type="text" id="nimi" required>
+                <p>E-mail</p>
+                <input type="text" id="email" required>
+                <p>Telefoninumber</p>
+                <input type="text" id="telefon" required>
+                <fieldset onValidate>
+                    <legend>Kuidas teiega ühendust võtta</legend>
+                    <input type="radio" id="telefon" name="telefon" value="telefon">
+                    <label for="telefon">Telefon</label>
+                    <input type="radio" id="email" name="email" value="email">
+                    <label for="email">E-mail</label>
+                </fieldset>
+                <p>Tekst</p>
+                <textarea id="sonum" name="sonum" rows="4" cols="50" required></textarea><br>
+                <button type="submit" id="submit" onclick="alert()">Toeta meid</button>
+                <div id="tekst">
+                    <p>Aitäh toetamast!</p>
+                </div>
+            </form>
+        </section>
+    </div>
+    <script src="mobile.js"></script>
+</body>
+</html>
